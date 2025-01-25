@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import icons
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -18,6 +20,31 @@ const Footer = () => {
       <p>
         Copyright &copy; {new Date().getFullYear()} AB Beniamouch. Tous droits réservés.
       </p>
+
+      {/* Social Icons */}
+      <div className="footer-icons">
+        <a
+          href="https://www.linkedin.com/in/your-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/your-github"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="mailto:your-email@example.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope />
+        </a>
+      </div>
     </motion.footer>
   );
 };

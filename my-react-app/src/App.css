@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #070522;
-    color: #ffffff;
+    background-color: #070522; /* Dark blue background */
+    color: #ffffff; /* White text */
   }
   
   .portfolio {
@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
   }
   
-  .hero, .about, .projects, .contact {
+  .hero, .about, .projects, .skills {
     min-height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
@@ -20,30 +20,11 @@ body {
     padding: 20px;
   }
   
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero button, .contact button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
   .about p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
   }
   
   .projects .project-grid {
@@ -54,49 +35,31 @@ body {
   }
   
   .project-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    width: 100%;
+  .project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
   }
   
-  .contact input, .contact textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem; /* Slightly smaller for mobile */
+    }
   
-  .contact textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
+    .hero p {
+      font-size: 1.25rem; /* Slightly smaller for mobile */
+    }
   
-  .footer a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer p {
-    margin: 5px 0;
+    .hero-image {
+      width: 200px;
+      height: 200px;
+      margin-top: 20px;
+    }
   }
