@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <motion.section
+      id="about"
       className="about"
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}

@@ -1,24 +1,54 @@
-// import React from 'react';
+import React from 'react';
+import { Link } from 'react-scroll'; // For smooth scrolling
+import './Navbar.css';
 
-const NavBar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <a href="#home">My Portfolio</a>
+      <div className="navbar-container">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="navbar-logo"
+        >
+          Your Name
+        </Link>
+        <ul className="navbar-menu">
+          <li className="navbar-item">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+            >
+              About
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              className="navbar-link"
+            >
+              Skills
+            </Link>
+          </li>
+        </ul>
       </div>
-      <ul className="navbar-menu">
-        <li className="navbar-item">
-          <a href="#about">About</a>
-        </li>
-        <li className="navbar-item">
-          <a href="#projects">Projects</a>
-        </li>
-        <li className="navbar-item">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
     </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
