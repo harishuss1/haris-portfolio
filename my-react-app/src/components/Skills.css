@@ -1,8 +1,12 @@
 .skills {
     padding: 60px 20px;
     text-align: center;
-    background-color: transparent; /* Remove background */
-    color: #ffffff; /* White text for contrast */
+    background-color: transparent; /* No background */
+    color: white;
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .skills h2 {
@@ -12,12 +16,42 @@
     color: #ffffff; /* White text */
   }
   
+  .skills-categories {
+    display: flex;
+    gap: 20px; /* Space between categories */
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 20px; /* Space for scrollbar */
+    flex: 1; /* Take up remaining height */
+    align-items: stretch; /* Stretch children to fill height */
+  }
+  
+  .skills-category {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each category */
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills-category h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+  }
+  
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); /* 2 icons per row */
+    gap: 20px; /* Space between skill cards */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Space for scrollbar */
+    flex: 1; /* Take up remaining height */
   }
   
   .skill-card {
@@ -25,29 +59,73 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 20px; /* Increased padding for larger icons */
     background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
     border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
   .skill-card:hover {
-    transform: translateY(-5px); /* Smaller lift on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
     background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
-    border-color: rgba(255, 255, 255, 0.2); /* Brighter border on hover */
   }
   
   .skill-icon {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Original icon size */
+    height: 50px; /* Original icon size */
     margin-bottom: 10px;
     filter: brightness(0) invert(1); /* Make icons white */
   }
   
   .skill-card p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1rem; /* Original font size */
     font-weight: 500;
     color: #ffffff; /* White text */
+    text-align: center;
+  }
+  
+  /* Scrollbar Styling */
+  .skills-categories::-webkit-scrollbar,
+  .skills-grid::-webkit-scrollbar {
+    width: 8px; /* Width for vertical scrollbar */
+    height: 8px; /* Height for horizontal scrollbar */
+  }
+  
+  .skills-categories::-webkit-scrollbar-track,
+  .skills-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  .skills-categories::-webkit-scrollbar-thumb,
+  .skills-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+  }
+  
+  .skills-categories::-webkit-scrollbar-thumb:hover,
+  .skills-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-categories {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .skills-category {
+      min-width: auto;
+    }
+  
+    .skills-category h3 {
+      font-size: 1.5rem;
+    }
+  
+    .skill-card p {
+      font-size: 0.9rem;
+    }
   }
