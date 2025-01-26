@@ -1,145 +1,128 @@
 .projects {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: transparent; /* No background */
-    color: white;
-  }
-  
-  .projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: 600; /* Bold for emphasis */
-    color: #ffffff; /* White text */
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+  background-color: transparent; /* No background */
+  color: white;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600; /* Bold for emphasis */
+  color: #ffffff; /* White text */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px; /* Space between project cards */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
+}
+
+.project-media {
+  width: 100%;
+  height: 200px; /* Fixed height for the image */
+  overflow: hidden;
+}
+
+.project-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff; /* White text */
+}
+
+.project-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.project-details li {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+  margin-bottom: 10px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  color: #ffffff; /* White text */
+}
+
+.tech-icon img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+.github-button svg {
+  font-size: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .projects-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: 1fr;
   }
-  
-  .project-card {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.05); /* Subtle transparent background */
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px; /* Wider card */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly brighter on hover */
-  }
-  
-  .project-media {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .project-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .project-details {
-    flex: 1;
-    padding: 20px;
-    text-align: left;
-  }
-  
+
   .project-details h3 {
-    font-size: 1.75rem;
-    margin-bottom: 20px;
-    color: #ffffff; /* White text */
+    font-size: 1.25rem;
   }
-  
-  .project-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
-  }
-  
+
   .project-details li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-  }
-  
-  .project-technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .tech-icon {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 1.25rem;
-    color: #ffffff; /* White text */
-  }
-  
-  .tech-icon span {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
   }
-  
-  .github-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    background-color: #007bff; /* Blue background */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-  }
-  
-  .github-button:hover {
-    background-color: #005bb5; /* Darker blue on hover */
-  }
-  
-  .github-button svg {
-    font-size: 1.25rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .project-card {
-      flex-direction: column;
-    }
-  
-    .project-media {
-      max-width: 100%;
-    }
-  
-    .project-details {
-      padding: 20px;
-    }
-  
-    .project-details h3 {
-      font-size: 1.5rem;
-    }
-  
-    .project-details li {
-      font-size: 0.9rem;
-    }
-  
-    .tech-icon {
-      font-size: 1rem;
-    }
-  
-    .tech-icon span {
-      font-size: 0.8rem;
-    }
-  }
+}

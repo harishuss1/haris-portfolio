@@ -12,7 +12,7 @@ const Navbar = () => {
           duration={500}
           className="navbar-logo"
         >
-          Your Name
+          Haris🎇
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">

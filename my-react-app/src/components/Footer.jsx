@@ -12,33 +12,47 @@ const Footer = () => {
       transition={{ duration: 1 }}
     >
       <p>
-        <a href="#contact">Contactez-moi</a>
+        <strong>Haris Hussain</strong> | hussainharis170@gmail.com
       </p>
       <p>
-        Conçu et développé par <strong>AB Beniamouch</strong>.
+        <a
+          href="https://www.linkedin.com/in/harishuss/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>{' '}
+        |{' '}
+        <a
+          href="https://github.com/harishuss1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </p>
       <p>
-        Copyright &copy; {new Date().getFullYear()} AB Beniamouch. Tous droits réservés.
+        Copyright &copy; {new Date().getFullYear()} Haris Hussain. All rights reserved.
       </p>
 
       {/* Social Icons */}
       <div className="footer-icons">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/harishuss/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/harishuss1"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub />
         </a>
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:hussainharis170@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >

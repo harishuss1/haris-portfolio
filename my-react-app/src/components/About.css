@@ -1,0 +1,115 @@
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: transparent; /* No background */
+    color: white;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600; /* Bold for emphasis */
+    color: #ffffff; /* White text */
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 40px; /* Space between Personal Info and Education */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .personal-info,
+  .education {
+    flex: 1;
+  }
+  
+  .personal-info h3,
+  .education h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+  }
+  
+  .personal-info p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* Timeline Styles */
+  .timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the vertical line */
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Position of the vertical line */
+    top: 0;
+    height: 100%;
+    width: 2px; /* Thickness of the vertical line */
+    background-color: rgba(255, 255, 255, 0.2); /* Color of the vertical line */
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px; /* Space between timeline entries */
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px; /* Position of the dot */
+    top: 10px;
+    width: 12px; /* Size of the dot */
+    height: 12px; /* Size of the dot */
+    background-color: #007bff; /* Color of the dot */
+    border-radius: 50%; /* Make it a circle */
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    padding-left: 20px; /* Space between the dot and content */
+  }
+  
+  .timeline-content h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    margin-bottom: 5px;
+  }
+  
+  .timeline-date {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6); /* Lighter text for dates */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .personal-info h3,
+    .education h3 {
+      font-size: 1.5rem;
+    }
+  
+    .personal-info p,
+    .timeline-content p {
+      font-size: 1rem;
+    }
+  
+    .timeline-content h4 {
+      font-size: 1.1rem;
+    }
+  }
