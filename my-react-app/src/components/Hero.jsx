@@ -13,14 +13,9 @@ const Hero = () => {
     >
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Hi, I'm Haris Hussain</h1>
+          <motion.h1 whileHover={{ scale: 1.1 }}>Hi, I'm Haris Hussain</motion.h1>
           <p>Junior Developper</p>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            View My Work
-          </motion.button>
+
         </div>
         <div className="hero-image">
           <img src="src/assets/haris.png" alt="Your Name" />
