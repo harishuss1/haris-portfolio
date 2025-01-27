@@ -22,7 +22,7 @@ const Projects = () => {
         { name: 'CI/CD', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/githubactions.svg' },
       ],
       image: Paintdropsimage, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/paintdrops-simulation', // Add your GitHub link
+      githubLink: 'https://github.com/harishuss1/PaintDrops', // Add your GitHub link
     },
     {
       title: 'Climate CO2 Fluctuation',
@@ -40,7 +40,7 @@ const Projects = () => {
         { name: 'Render', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/render.svg' },
       ],
       image: ClimateC02, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/climate-co2-fluctuation', // Add your GitHub link
+      githubLink: 'https://github.com/harishuss1/Climate-Lens', // Add your GitHub link
     },
     {
       title: 'Car Showroom',
@@ -57,7 +57,7 @@ const Projects = () => {
         { name: 'CSS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/css3.svg' },
       ],
       image: CarShowroom,
-      githubLink: 'https://github.com/your-username/car-showroom',
+      githubLink: 'https://github.com/harishuss1/car-showcase',
     },
     {
       title: 'Medical Appointment Booking System',
@@ -74,7 +74,7 @@ const Projects = () => {
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
       image: projectPlaceholder, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/medical-appointment-booking', // Add your GitHub link
+      githubLink: 'https://github.com/harishuss1/Medical-Appointment-App', // Add your GitHub link
     },
     {
       title: 'Recipe Sharing Platform',
@@ -91,7 +91,7 @@ const Projects = () => {
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
       image: projectPlaceholder, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/recipe-sharing-platform', // Add your GitHub link
+      githubLink: 'https://github.com/harishuss1/Recipe-Sharer', // Add your GitHub link
     },
     {
       title: 'Mega Store Database',
@@ -107,7 +107,7 @@ const Projects = () => {
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
       image: projectPlaceholder, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/mega-store-database', // Add your GitHub link
+      githubLink: 'https://github.com/harishuss1/Java-SQL-MegaStore', // Add your GitHub link
     },
    
   ];
