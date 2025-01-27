@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import projectPlaceholder from '../assets/images/projects/project-placeholder.png'; // Import the local image
+
 import './Projects.css';
 
 const Projects = () => {
@@ -17,7 +19,7 @@ const Projects = () => {
         { name: 'Unit Testing', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jest.svg' },
         { name: 'CI/CD', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/githubactions.svg' },
       ],
-      video: 'https://www.example.com/paintdrops-simulation.mp4', // Replace with your project video URL
+      image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/paintdrops-simulation', // Add your GitHub link
     },
     {
@@ -35,7 +37,7 @@ const Projects = () => {
         { name: 'AWS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/amazonaws.svg' },
         { name: 'Render', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/render.svg' },
       ],
-      video: 'https://www.example.com/climate-co2-fluctuation.mp4', // Replace with your project video URL
+      image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/climate-co2-fluctuation', // Add your GitHub link
     },
     {
@@ -51,7 +53,7 @@ const Projects = () => {
         { name: 'PL/SQL', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/oracle.svg' },
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
-      video: 'https://www.example.com/mega-store-database.mp4', // Replace with your project video URL
+      image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/mega-store-database', // Add your GitHub link
     },
     {
@@ -68,7 +70,7 @@ const Projects = () => {
         { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/json.svg' },
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
-      video: 'https://www.example.com/medical-appointment-booking.mp4', // Replace with your project video URL
+      image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/medical-appointment-booking', // Add your GitHub link
     },
     {
@@ -85,7 +87,7 @@ const Projects = () => {
         { name: 'Entity Framework', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/dotnet.svg' },
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
       ],
-      video: 'https://www.example.com/recipe-sharing-platform.mp4', // Replace with your project video URL
+      image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/recipe-sharing-platform', // Add your GitHub link
     },
   ];
@@ -97,10 +99,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <div className="project-media">
-              <video controls>
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <img src={project.image} alt={project.title} />
             </div>
             <div className="project-details">
               <h3>{project.title}</h3>
