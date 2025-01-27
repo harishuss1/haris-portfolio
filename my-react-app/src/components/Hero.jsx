@@ -43,7 +43,9 @@ const Hero = () => {
             Junior Developer
           </motion.p>
         </div>
+        <div className="hero-image">
           <img src="src/assets/haris.png" alt="Haris Hussain" />
+        </div>
       </div>
     </motion.section>
   );

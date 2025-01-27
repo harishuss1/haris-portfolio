@@ -10,9 +10,10 @@ const About = () => {
         <div className="personal-info">
           <h3>Personal Info</h3>
           <p>
-            I'm a passionate developer with experience in building web applications
-            using modern technologies like React, Node.js, and more. I love solving
-            problems and creating beautiful, user-friendly interfaces.
+            I'm a developer with a strong desire to learn and grow in all areas of technology. 
+            I thrive on exploring new concepts and am always searching for opportunities to expand my knowledge and skills.
+            Whether it's solving complex problems, innovating with emerging technologies, or building impactful solutions, 
+            I enjoy tackling challenges and adapting to different fields to deliver exceptional results.
           </p>
         </div>
 
@@ -38,7 +39,7 @@ const About = () => {
               </div>
             </div>
 
-            
+
 
           </div>
         </div>

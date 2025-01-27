@@ -18,7 +18,7 @@ const Skills = () => {
       { name: 'Docker', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg' },
       { name: 'AWS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/amazonaws.svg' },
       { name: 'Flask', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/flask.svg' },
-      { name: 'Monogame', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/monogame.svg' },
+      { name: 'Monogame', icon: 'src/assets/images/logos/monogame.png' },
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg' },
       { name: 'Microsoft Office', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/microsoftoffice.svg' },
       { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/androidstudio.svg' },
@@ -28,12 +28,14 @@ const Skills = () => {
     webDevelopment: [
       { name: 'Three.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/threedotjs.svg' },
       { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg' },
+      { name: 'GSAP', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/greensock.svg' },
+      { name: 'Framer Motion', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/framer.svg' },
       { name: 'React', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg' },
-      { name: 'HTML', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/html5.svg' },
-      { name: 'CSS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/css3.svg' },
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg' },
       { name: 'Express', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/express.svg' },
       { name: 'REST API', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/json.svg' },
+      { name: 'HTML', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/html5.svg' },
+      { name: 'CSS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/css3.svg' },
     ],
   };
 

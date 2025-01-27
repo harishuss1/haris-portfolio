@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import projectPlaceholder from '../assets/images/projects/project-placeholder.png'; // Import the local image
-
+import Paintdropsimage from '../assets/images/projects/paintdrops-simulation.png';
+import ClimateC02 from '../assets/images/projects/climate-co2-fluctuation.png';
+import CarShowroom from '../assets/images/projects/car-showroom.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -19,7 +21,7 @@ const Projects = () => {
         { name: 'Unit Testing', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jest.svg' },
         { name: 'CI/CD', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/githubactions.svg' },
       ],
-      image: projectPlaceholder, // Replace with your project image URL
+      image: Paintdropsimage, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/paintdrops-simulation', // Add your GitHub link
     },
     {
@@ -37,24 +39,25 @@ const Projects = () => {
         { name: 'AWS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/amazonaws.svg' },
         { name: 'Render', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/render.svg' },
       ],
-      image: projectPlaceholder, // Replace with your project image URL
+      image: ClimateC02, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/climate-co2-fluctuation', // Add your GitHub link
     },
     {
-      title: 'Mega Store Database',
+      title: 'Car Showroom',
       description: [
-        'Java app integrated with Oracle SQL for managing store data.',
-        'PL/SQL for database setup and updates.',
-        'Modular design for maintainability and scalability.',
+        'Three.js application showcasing interactive 3D car models.',
+        'Features smooth page transitions using GSAP and scroll-triggered animations.',
+        'Responsive design with a floating car model that reacts to scroll events.',
       ],
       technologies: [
-        { name: 'Java', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/java.svg' },
-        { name: 'SQL Oracle', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/oracle.svg' },
-        { name: 'PL/SQL', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/oracle.svg' },
-        { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
+        { name: 'Three.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/threedotjs.svg' },
+        { name: 'GSAP', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/greensock.svg' },
+        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg' },
+        { name: 'HTML', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/html5.svg' },
+        { name: 'CSS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/css3.svg' },
       ],
-      image: projectPlaceholder, // Replace with your project image URL
-      githubLink: 'https://github.com/your-username/mega-store-database', // Add your GitHub link
+      image: CarShowroom,
+      githubLink: 'https://github.com/your-username/car-showroom',
     },
     {
       title: 'Medical Appointment Booking System',
@@ -90,6 +93,23 @@ const Projects = () => {
       image: projectPlaceholder, // Replace with your project image URL
       githubLink: 'https://github.com/your-username/recipe-sharing-platform', // Add your GitHub link
     },
+    {
+      title: 'Mega Store Database',
+      description: [
+        'Java app integrated with Oracle SQL for managing store data.',
+        'PL/SQL for database setup and updates.',
+        'Modular design for maintainability and scalability.',
+      ],
+      technologies: [
+        { name: 'Java', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/java.svg' },
+        { name: 'SQL Oracle', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/oracle.svg' },
+        { name: 'PL/SQL', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/oracle.svg' },
+        { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },
+      ],
+      image: projectPlaceholder, // Replace with your project image URL
+      githubLink: 'https://github.com/your-username/mega-store-database', // Add your GitHub link
+    },
+   
   ];
 
   return (

@@ -37,8 +37,8 @@
 }
 
 .hero-image {
-  width: 500px;
-  height: 500px;
+  width: 500px; /* Reduced size */
+  height: 500px; /* Reduced size */
   overflow: hidden;
   border-radius: 50%; /* Optional: Makes the image circular */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
@@ -47,7 +47,7 @@
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
 }
 
 /* Responsive Design */
