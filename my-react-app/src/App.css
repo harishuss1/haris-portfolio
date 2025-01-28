@@ -1,6 +1,9 @@
 html {
   font-family: 'Poppins', sans-serif;
 }
+html, body {
+  touch-action: pan-y; /* Allow vertical scrolling on touch devices */
+}
 
 body {
   margin: 0;
