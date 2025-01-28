@@ -4,6 +4,9 @@ import projectPlaceholder from '../assets/images/projects/project-placeholder.pn
 import Paintdropsimage from '../assets/images/projects/paintdrops-simulation.png';
 import ClimateC02 from '../assets/images/projects/climate-co2-fluctuation.png';
 import CarShowroom from '../assets/images/projects/car-showroom.png';
+import avalonialogo from '../assets/images/logos/avalonia.png';
+import monogamelogo from '../assets/images/logos/monogame.png';
+import renderlogo from '../assets/images/logos/render.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -17,7 +20,7 @@ const Projects = () => {
       ],
       technologies: [
         { name: 'C#', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/csharp.svg' },
-        { name: 'MonoGame', icon: 'src/assets/images/logos/monogame.png' },
+        { name: 'MonoGame', icon: monogamelogo },
         { name: 'Unit Testing', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jest.svg' },
         { name: 'CI/CD', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/githubactions.svg' },
       ],
@@ -37,7 +40,7 @@ const Projects = () => {
         { name: 'React', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg' },
         { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg' },
         { name: 'AWS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/amazonaws.svg' },
-        { name: 'Render', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/render.svg' },
+        { name: 'Render', icon: renderlogo },
       ],
       image: ClimateC02, // Replace with your project image URL
       githubLink: 'https://github.com/harishuss1/Climate-Lens', // Add your GitHub link
@@ -85,7 +88,7 @@ const Projects = () => {
       ],
       technologies: [
         { name: 'C#', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/csharp.svg' },
-        { name: 'Avalonia', icon: 'src/assets/images/logos/avalonia.png' },
+        { name: 'Avalonia', icon: avalonialogo },
         { name: 'SQL', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mysql.svg' },
         { name: 'Entity Framework', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/dotnet.svg' },
         { name: 'Git', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/git.svg' },

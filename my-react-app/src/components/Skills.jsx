@@ -1,4 +1,6 @@
 import React from 'react';
+import monogamelogo from '../assets/images/logos/monogame.png';
+
 import './Skills.css';
 
 const Skills = () => {
@@ -18,7 +20,7 @@ const Skills = () => {
       { name: 'Docker', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/docker.svg' },
       { name: 'AWS', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/amazonaws.svg' },
       { name: 'Flask', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/flask.svg' },
-      { name: 'Monogame', icon: 'src/assets/images/logos/monogame.png' },
+      { name: 'Monogame', icon: monogamelogo },
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg' },
       { name: 'Microsoft Office', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/microsoftoffice.svg' },
       { name: 'Android Studio', icon: 'https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/androidstudio.svg' },
