@@ -16,6 +16,7 @@ const App = () => {
       duration: 1.2, // Scroll animation duration
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
       smooth: true, // Enable smooth scrolling
+      touchMultiplier: 2,
     });
 
     // Update scroll position on each frame

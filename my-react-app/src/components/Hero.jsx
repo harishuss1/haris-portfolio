@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import MyPicture from '../assets/images/face/haris.png';
+
 import './Hero.css';
 
 // Helper function to split text into letters for animation
@@ -44,7 +46,7 @@ const Hero = () => {
           </motion.p>
         </div>
         <div className="hero-image">
-          <img src="src/assets/haris.png" alt="Haris Hussain" />
+        <img src={MyPicture} alt="Haris Hussain" /> 
         </div>
       </div>
     </motion.section>
